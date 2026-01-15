@@ -4,14 +4,39 @@ A CodeIgniter 4 package that generates migration files from your existing databa
 
 ## Installation
 
-1. Install via Composer:
+### Option 1: Via Composer (Recommended)
+Run the following command in your CodeIgniter 4 project root:
 
-   ```bash
-   composer require sabarinathan/ci4-schema-to-migration
-   ```
-   *(Note: Adjust the package name if installed locally or via a different repository)*
+```bash
+composer require sabarinathan/ci4-schema-to-migration
+```
 
-2. Ensure CodeIgniter CLI is working.
+### Option 2: Manual Installation (Local Repositories)
+If the package is not available on Packagist yet, you can refer to it locally.
+
+1.  Open your CI4 project's `composer.json`.
+2.  Add a `repositories` section:
+    ```json
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sabarinathan/ci4-schema-to-migration"
+        }
+    ],
+    ```
+3.  Run:
+    ```bash
+    composer require sabarinathan/ci4-schema-to-migration:dev-main
+    ```
+
+### Command Discovery
+After installation, the command `dbmigration:generate` will be automatically discovered by CodeIgniter 4's `Spark` CLI through the `composer` autoloading. You don't need to manually register it.
+
+Verify it is listed by running:
+```bash
+php spark list
+```
+You should see `dbmigration:generate` under the `Database` group.
 
 ## Usage
 
