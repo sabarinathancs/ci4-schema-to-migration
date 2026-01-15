@@ -1,0 +1,17 @@
+{
+    "name": "sabarinathan/ci4-schema-to-migration",
+    "description": "Generate CodeIgniter 4 migration files from an existing database schema.",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "codeigniter4/framework": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ci4SchemaToMigration\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
