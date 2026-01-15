@@ -3,6 +3,16 @@
     "description": "Generate CodeIgniter 4 migration files from an existing database schema.",
     "license": "MIT",
     "type": "library",
+    "authors": [
+        {
+            "name": "Sabarinathan",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/sabarinathan/ci4-schema-to-migration",
+        "issues": "https://github.com/sabarinathan/ci4-schema-to-migration/issues"
+    },
     "require": {
         "php": "^7.4 || ^8.0",
         "codeigniter4/framework": "^4.0"
