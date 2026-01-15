@@ -10,9 +10,9 @@ use Ci4SchemaToMigration\Libraries\MigrationGenerator;
 class GenerateMigration extends BaseCommand
 {
     protected $group = 'Database';
-    protected $name = 'migration:generate';
+    protected $name = 'dbmigration:generate';
     protected $description = 'Generates a migration file from an existing database table.';
-    protected $usage = 'migration:generate [table_name] [options]';
+    protected $usage = 'dbmigration:generate [table_name] [options]';
     protected $arguments = [
         'table_name' => 'The name of the table to generate a migration for.',
     ];

@@ -18,19 +18,19 @@ A CodeIgniter 4 package that generates migration files from your existing databa
 Run the Spark command to generate a migration for a specific table:
 
 ```bash
-php spark migration:generate <table_name>
+php spark dbmigration:generate <table_name>
 ```
 
 Or generate migrations for **ALL** tables in the database:
 
 ```bash
-php spark migration:generate --all
+php spark dbmigration:generate --all
 ```
 
 Example:
 
 ```bash
-php spark migration:generate users
+php spark dbmigration:generate users
 ```
 
 This will create a new migration file in `app/Database/Migrations/`.
