@@ -21,6 +21,12 @@ Run the Spark command to generate a migration for a specific table:
 php spark migration:generate <table_name>
 ```
 
+Or generate migrations for **ALL** tables in the database:
+
+```bash
+php spark migration:generate --all
+```
+
 Example:
 
 ```bash
